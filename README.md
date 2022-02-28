@@ -86,7 +86,7 @@ Certifique-se de que o arquivo `main.js`, que foi compilado a partir do arquivo 
     // ...
     "scripts": {
         // ...
-        "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
+        "heroku-postbuild": "NODE_ENV=dev npm install --omit --no-shrinkwrap && npm run build"
     }
 }
 ```
